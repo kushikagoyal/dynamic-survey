@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
           alert("An error occurred while loading the question");
       }
   };
-
+  //test sample
   const submitAnswer = async (questionId, option_id) => {
       try {
           const response = await fetch("/submit", {
