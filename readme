@@ -44,7 +44,7 @@ INSERT INTO options (question_id, option_text, score, next_question_id) VALUES
 CREATE TABLE answers (
     id SERIAL PRIMARY KEY,
     question_id INT,
-    session_id VARCHAR(255), -- To track answers for the same session
+    session_id VARCHAR(255), 
     option_id INT,
     text_answer TEXT,
     FOREIGN KEY (question_id) REFERENCES questions(id),
